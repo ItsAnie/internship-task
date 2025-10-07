@@ -1,0 +1,433 @@
+.main_info{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/images/main-back-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.main-info-wrapper{
+    width: 100%;
+}
+
+.info p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.info h1{
+    font-size: 60px;
+    max-width: 500px;
+}
+
+.search-bar{
+    margin: 30px auto 0;
+    width: 100%;
+    height: 74px;
+}
+
+.input-section{
+    flex: 1;
+    border: 1px solid #DE3B22;
+    border-radius: 40px;
+    padding: 8px 10px 8px 30px;
+    gap: 10px;
+    background-color: white;
+    font-size: 18px;
+    color: black;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.divider{
+    width: 1px;
+    height: 50px;
+    background-color: #E3E3E3;
+}
+
+.explore-deal-btn{
+    width: 140px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: #DE3B22;
+    color: white;
+    border: none;
+}
+
+.search-btn{
+    width: 140px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: #DE3B22;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+@media(max-width: 768px){
+    .main_info{
+        background-position: center;
+        justify-content: flex-end;
+    }
+}
+
+.search-bar-small{
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #DE3B22;
+    margin: 30px auto 0;
+    color: black;
+    width: 100%;
+}
+
+.small-search-btn{
+    width: 38px;
+    height: 38px;
+    border-radius: 1000px;
+    border: none;
+    background-color: #DE3B22;
+    color: white;
+    padding-left: 12px;
+}
+
+.input-section-small{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filters{
+    font-size: 12px;
+    color: #999999;
+}
+
+.search-text{
+    font-size: 16px;
+    color: #999999;
+}
+
+.search-items input{
+    border: none !important;
+}
+
+.small-divider{
+    margin-top: 5px;
+    width: 1px;
+    height: 12px;
+    background-color: #E3E3E3;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #DE3B22;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-btn{
+    position: absolute;
+    bottom: 440px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px;
+    border-radius: 1000px;
+    background-color: #F3F3F3;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.rooms{
+    margin-top: 10px;
+    border: 1px solid #E3E3E3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    color: #999999;
+}
+.rooms select{
+    border: none !important;
+    padding-left: 0 !important;
+}
+
+.rooms p{
+    margin-bottom: 0;
+}
+
+.adults-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #999999;
+}
+
+.adults-child p{
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+}
+
+.ad-child-inputs{
+    border: 1px solid #E3E3E3;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 95px;
+}
+
+.ad-child-inputs input{
+    border: none !important;
+    padding-left: 0 !important;
+}
+
+.overlay-form input,
+.overlay-form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F3F3F3;
+    border-radius: 15px;
+}
+
+.overlay-actions{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F3F3F3;
+}
+
+.clear-btn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+.clear-btn:hover{
+    background-color: #F3F3F3;
+}
+
+.dropdown-list {
+    padding-top: 10px;
+    position: absolute;
+    z-index: 2000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 350px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #F3F3F3;
+    border-radius: 15px;
+    color: black;
+    font-family: Arial;
+}
+
+.dropdown-list li{
+    padding-left: 10px;
+}
+
+.dropdown-list li:hover{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    width: 280px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  line-height: 2rem;
+  font-size: 16px;
+}
+
+.dropdown-header {
+  font-weight: 800;
+  color: black;
+  line-height: 3rem;
+  font-size: 16px;
+}
+
+.dropdown-list::-webkit-scrollbar{
+    width: 2px;
+}
+
+.dropdown-list::-webkit-scrollbar-track{
+    background-color: #F3F3F3;
+    border: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb{
+    background-color: #999999;
+    border-radius: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover{
+    background-color: #7e7e7e;
+}
+
+.check p:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.check{
+    position: relative;
+    z-index: 1;
+    border: 1px solid #F3F3F3;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #999999;
+}
+
+.checkin-checkout-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px 0 15px;
+}
+
+.react-datepicker-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-datepicker {
+    font-family: Arial;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: none;   
+    width: 100%;
+}
+
+.react-datepicker__header {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.react-datepicker-popper{
+    width: 100%;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background: none;
+    color: #000;
+}
+
+.react-datepicker{
+    width: 100%;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.react-datepicker_month-container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.react-datepicker__month{
+    display: grid;
+    gap: 10px;
+}
+
+.react-datepicker__day {
+  border-radius: 0 !important;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin: 0.1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.react-datepicker__day--in-range {
+  background-color: #F3F3F3 !important;
+  color: #000 !important;
+  border-radius: 0 !important;
+}
+
+.react-datepicker__day--range-start {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.react-datepicker__day--range-end {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #ddd !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--selected {
+  border-radius: 0 !important;
+}
+
+@media(max-width: 576px){
+    .main_info{
+        justify-content: end;
+    }
+
+    .info h1{
+        font-size: 35px;
+    }
+
+    .filters{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 8px;
+    }
+
+}

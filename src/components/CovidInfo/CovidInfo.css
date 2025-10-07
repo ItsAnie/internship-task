@@ -1,0 +1,26 @@
+.covid-container{
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.warn-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.covid-link{
+    text-decoration: underline;
+    color: blue;
+}
+
+@media(max-width: 768px){
+    .covid-container{
+        width: 330px;
+        border-radius: 15px;
+    }
+}

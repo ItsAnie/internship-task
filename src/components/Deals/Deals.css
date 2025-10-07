@@ -1,0 +1,56 @@
+.city-list {
+  margin-top: 6px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #999999;
+  font-weight: 300;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.city-list li {
+  transition: all 0.2s ease;
+}
+
+.city-list li:hover {
+  color: #DE3B22;
+  cursor: pointer;
+}
+
+.city-list li:active {
+  color: #DE3B22;
+  text-decoration: underline;
+}
+
+
+.view-all {
+  margin-left: auto;
+  color: blue;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE BEHAVIOR ===== */
+
+/* Large screens (≥992px) – show all */
+@media (min-width: 992px) {
+  .city-list li {
+    display: inline-block;
+  }
+}
+
+/* Medium screens (768px–991px) – hide last 4 cities */
+@media (max-width: 991px) and (min-width: 768px) {
+  .city-list li:nth-last-child(-n+5):not(.arrow):not(.view-all) {
+    display: none;
+  }
+}
+
+/* Small screens (<768px) – hide all cities */
+@media (max-width: 767px) {
+  .city-list li:not(.arrow):not(.view-all) {
+    display: none;
+  }
+}

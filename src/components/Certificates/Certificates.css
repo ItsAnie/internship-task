@@ -1,0 +1,87 @@
+.certificates-row > div{
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.certificates-row{
+    flex-direction: nowrap;
+}
+
+.certificates{
+    margin-top: 50px;
+}
+
+.img_1{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+        url('/images/certificate1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 2;
+    background-position: center;
+    height: 230px;
+}
+
+.certificates-row p{
+    max-width: 250px;
+}
+
+.img_2{
+    background-image: url('/images/certificate2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.img_3{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url('/images/certificate3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    height: 230px;
+}
+
+.explore-btn{
+    width: 95px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: #DE3B22;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.explore_deal{
+    width: 135px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: white;
+    color: #DE3B22;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+
+@media(max-width:768px){
+    .certificates-row{
+        flex-direction: column;
+    }
+
+    .img_2{
+        min-height: 25vh;
+    }
+
+    .img_1, .img_2, .img_3{
+        width: 100%;
+        height: 230px;
+    }
+}

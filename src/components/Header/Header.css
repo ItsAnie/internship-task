@@ -1,0 +1,59 @@
+.header-container{
+    width: 1600px;
+}
+
+.euro{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+    text-align: center;
+    padding: 0;
+}
+
+.flag{
+    width: 27px;
+    height: 27px;
+}
+
+.sign-up{
+    width: 95px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #DE3B22;
+    color: #DE3B22;
+    font-weight: 800;
+    font-size: 16px;
+    background-color: white;
+}
+
+.profile-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.small-screen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+  width: 103px;
+  height: 42px;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}

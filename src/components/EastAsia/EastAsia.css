@@ -1,0 +1,48 @@
+.eastasia-container{
+    margin-top: 2rem;
+}
+
+.east-asia{
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FAFAFA;
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.gradient-text {
+  max-height: 80px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+.gradient-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.gradient-text.expanded {
+  max-height: 1000px;
+}
+
+.gradient-text.expanded::after {
+  opacity: 0;
+}
+
+.view-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
