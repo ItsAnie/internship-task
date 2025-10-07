@@ -78,10 +78,22 @@
         background-position: center;
         justify-content: flex-end;
     }
+
+    .input-section-small{
+        padding: 0 15px;
+        padding-top: 5px;
+    }
+
+    .filters p{
+        font-size: 16px;
+    }
+
+    .filters{
+        gap: 10px;
+    }
 }
 
 .search-bar-small{
-    padding: 0 15px;
     background-color: white;
     border-radius: 40px;
     border: 1px solid #DE3B22;
@@ -415,19 +427,64 @@
 }
 
 @media(max-width: 576px){
-    .main_info{
-        justify-content: end;
+    .search-bar-small {
+        width: 100%;             /* կենտրոնացված և փոքր էկրանին տեղավորվող */
+        margin: 20px auto;      /* վերևից/ներքևից փոքր շերտ, կենտրոնացված */
+        padding: 0 10px;      /* ներսի տարրերի համար բավարար padding */
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* տարրերը հավասարաչափ */
+        gap: 6px;
     }
 
-    .info h1{
-        font-size: 35px;
-    }
-
-    .filters{
+    .input-section-small {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
-        gap: 8px;
+        gap: 6px;               /* տարրերի միջև փոքր gap */
     }
 
+    .search-items {
+        display: flex;
+        flex-direction: column;
+        flex: 1;                 /* զբաղեցնում է մնացած տեղը */
+    }
+
+    .search-text {
+        font-size: 12px;         /* փոքր էկրանին հարմար չափ */
+        margin-bottom: px;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: nowrap;       /* շարքը չի կոտրվում */
+        justify-content: space-between;
+        gap: 4px;                /* փոքր տարածություն տարրերի միջև */
+        overflow-x: auto;        /* եթե չափը փոքր է, կարող է հորիզոնական scroll լինել */
+        white-space: nowrap;
+    }
+
+    .filters p {
+        flex-shrink: 0;          /* տարրերը չեն սեղմվում */
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .small-divider {
+        width: 1px;
+        height: 12px;
+        background-color: #E3E3E3;
+        align-self: center;
+    }
+
+    .small-search-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

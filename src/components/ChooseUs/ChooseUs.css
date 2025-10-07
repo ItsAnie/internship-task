@@ -98,4 +98,17 @@
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .header-img-wrapper {
+      height: 220px;
+      width: 200px;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+  }
 
+  .header-img-wrapper img {
+      width: 250px;
+      height: auto;
+  }
+}
